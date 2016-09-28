@@ -1,0 +1,17 @@
+public void switchPane(JlayeredPane LPane , JPanel currentPanel){
+
+for(int i = 0 ; i< Lpane.getComponentCount(); i++){
+/*Type casting the component to a jpanel , so make sure the only components on the jlayeredpanes are the panels you want to switch between
+If youre going to have 1 or 2 different components , then you should put this statement in a try-catch so it does not result in error.
+ */
+ JPanel panel = (JPanel) LPane.getComponentAt(i);                                                    
+panel.setVisible(False);
+
+
+}
+
+currentPanel.setVisible(True) ;
+
+
+
+}
